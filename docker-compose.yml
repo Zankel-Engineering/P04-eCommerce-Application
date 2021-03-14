@@ -11,7 +11,8 @@ services:
     volumes:
       - ~/jenkins:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
-      - /usr/local/bin/docker:/usr/local/bin/docker
-
+      - /usr/bin/docker:/usr/bin/docker
+      - /usr/bin/docker-compose:/usr/bin/docker-compose
+      - //Users/sebastianzankel/.m2:/root/.m2
 
 # docker exec [name of jenkins] cat /var/jenkins_home/secrets/initialAdminPassword
